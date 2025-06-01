@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEG One - Visualizar Orientação</title>
+    <link rel="stylesheet" href="/orientacao.css">
+    <link rel="shortcut icon" href="/FrontEnd/image/logoWeg.png" type="image/x-icon">
+    <script src="/FrontEnd/orientacao.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-logo-container">
+            <button class="hamburger-menu" aria-label="Menu">☰</button>
+            <a href="index.html" aria-label="Página Inicial">
+                <img src="/FrontEnd/image/logoWeg.png" alt="WEG Logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="orientation-header">
+            <div class="orientation-title-group">
+                <span class="orientation-category" id="orientation-category-display"></span>
+                <h1 class="orientation-main-title" id="orientation-main-title-display"></h1>
+            </div>
+            <span class="orientation-id" id="orientation-id-display"></span>
+        </div>
+
+        <article class="orientation-content" id="orientation-text-content">
+            <!-- Conteúdo será preenchido por JavaScript -->
+        </article>
+
+        <div class="action-buttons">
+            <button class="btn btn-edit" id="edit-button">Editar</button>
+            <button class="btn btn-delete" id="delete-button">Excluir</button>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmação de Exclusão -->
+    <div class="modal-overlay" id="confirm-delete-modal">
+        <div class="modal-content">
+            <h3>Tem certeza que deseja excluir?</h3>
+            <div class="modal-buttons">
+                <button class="btn modal-btn-confirm" id="modal-confirm-delete">Confirmar</button>
+                <button class="btn modal-btn-cancel" id="modal-cancel-delete">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

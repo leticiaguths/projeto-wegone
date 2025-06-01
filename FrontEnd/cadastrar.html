@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEG One - Cadastrar/Editar Orientação</title>
+    <link rel="stylesheet" href="/cadastrar.css">
+    <link rel="shortcut icon" href="/FrontEnd/image/logoWeg.png" type="image/x-icon">
+    <script src="/FrontEnd/cadastrar.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-logo-container">
+            <button class="hamburger-menu" aria-label="Menu">☰</button>
+            <a href="index.html" aria-label="Página Inicial">
+                <img src="/FrontEnd/image/logoWeg.png" alt="WEG Logo">
+            </a>
+        </div>
+        <div class="lang-selector">
+            <img src="https://flagcdn.com/br.svg" alt="Idioma Brasileiro">
+            <span>▼</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="attention-bar">
+            <p><strong>Atenção:</strong> é preciso adicionar a orientação em todos os idiomas, caso necessário utilize um tradutor.</p>
+            <a class="btn-translator" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Abrir tradutor on-line</a>
+        </div>
+
+        <form action="">
+            <input type="hidden" id="orientation-id" name="orientation-id">
+            <div class="form-main-grid">
+                <div class="form-sections">
+                    <div class="form-group">
+                        <label for="title-pt">Orientação em Português</label>
+                        <input type="text" class="title-pt" name="title-pt" placeholder="Título">
+                        <textarea class="orientation-pt" name="orientation-pt" placeholder="Orientação"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title-en">Orientação em Inglês</label>
+                        <input type="text" class="title-en" name="title-en" placeholder="Título">
+                        <textarea id="orientation-en" name="orientation-en" placeholder="Orientação"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title-es">Orientação em Espanhol</label>
+                        <input type="text" id="title-es" name="title-es" placeholder="Título">
+                        <textarea id="orientation-es" name="orientation-es" placeholder="Orientação"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title-de">Orientação em Alemão</label>
+                        <input type="text" id="title-de" name="title-de" placeholder="Título">
+                        <textarea id="orientation-de" name="orientation-de" placeholder="Orientação"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title-fr">Orientação em Francês</label>
+                        <input type="text" id="title-fr" name="title-fr" placeholder="Título">
+                        <textarea id="orientation-fr" name="orientation-fr" placeholder="Orientação"></textarea>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <h3>Tipo</h3>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="type" value="manual_operacao"> Manual de Operação</label>
+                        <label><input type="checkbox" name="type" value="manutencao_reparos"> Manutenção e Reparos</label>
+                        <label><input type="checkbox" name="type" value="manual_conduta"> Manual de Conduta</label>
+                        <label><input type="checkbox" name="type" value="procedimento_seguranca"> Procedimento de Segurança</label>
+                        <label><input type="checkbox" name="type" value="termo_responsabilidade"> Termo de Responsabilidade</label>
+                        <label><input type="checkbox" name="type" value="operacoes_sazonais"> Operações Sazonais</label>
+                    </div>
+                    <div class="id-type-display" id="id-type-display-field">ID - TIPO</div>
+                </aside>
+            </div>
+
+            <div class="action-buttons">
+                <button type="button" class="btn-save" id="save-button">Confirmar e salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-overlay" id="confirm-save-modal">
+        <div class="modal-content">
+            <h3>Deseja salvar suas alterações?</h3>
+            <div class="modal-buttons">
+                <button class="btn modal-btn-confirm" id="modal-confirm-save">Confirmar</button>
+                <button class="btn modal-btn-cancel" id="modal-cancel-save">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

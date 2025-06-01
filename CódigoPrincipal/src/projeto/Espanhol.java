@@ -6,7 +6,7 @@ public class Espanhol {
 	
 	Scanner leer = new Scanner(System.in);
 	
-	int idioma, idBusqueda = 0, encontrarEdicion = 0;
+	int idBusqueda = 0, encontrarEdicion = 0;
 	String menu = null, nombreBusqueda = null, eliminar, edicion, editar, metodoBusqueda, metodoEdicion;
 	static String []nombre = new String[100];
 	static String []manualEs = new String[100];
@@ -17,22 +17,22 @@ public class Espanhol {
 		
 		Fixos.fixosEspanhol();
 		
-		System.out.println("====================== ¡Bienvenido al sitio de WegOne! ======================="); //introducción
-		System.out.println(); //salto de línea
-		System.out.println("Aquí conocerás nuestros proyectos, aprenderás sobre nuestras soluciones \ninnovadoras y descubrirás cómo estamos transformando ideas en tecnología."); //descripción
-		System.out.println(); //salto de línea
+		System.out.println("====================== ¡Bienvenido al sitio de WegOne! ======================="); 
+		System.out.println(); 
+		System.out.println("Aquí conocerás nuestros proyectos, aprenderás sobre nuestras soluciones \ninnovadoras y descubrirás cómo estamos transformando ideas en tecnología."); 
+		System.out.println(); 
 
 		do {
 
-			System.out.println("=============================================================================="); //divisor
-			System.out.println(); //salto de línea
+			System.out.println("=============================================================================="); 
+			System.out.println(); 
 
-			System.out.println("===================== Seleccione qué necesita hacer ahora ====================\n"); //muestra al usuario las acciones disponibles
-			System.out.println("1- Registrar una directriz; \n2- Buscar una directriz; \n3- Editar una directriz; \n4- Eliminar una directriz; \n5- Cambiar idioma; \n6- Salir;"); //
+			System.out.println("===================== Seleccione qué necesita hacer ahora ====================\n"); 
+			System.out.println("1- Registrar una directriz; \n2- Buscar una directriz; \n3- Editar una directriz; \n4- Eliminar una directriz; \n5- Cambiar idioma; \n6- Salir;"); 
 			menu = leer.nextLine();
 
-			System.out.println(); //salto de línea
-			System.out.println("=============================================================================="); //divisor
+			System.out.println();
+			System.out.println("=============================================================================="); 
 
 		//REGISTRAR-------------------------------------------------------------------------------------------------------------
 
@@ -64,7 +64,7 @@ public class Espanhol {
 		        for(int a = 0; a < nombre.length; a++) {
 		            if(nombre[a] == null) {
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Escriba el nombre de la directriz: ");
 		                escrito = leer.nextLine();
@@ -78,7 +78,7 @@ public class Espanhol {
 
 		                nombre[a] = escrito;
 		                String mostrar = escrito;
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 
 		                if (metodoRegistro == 2){
@@ -97,7 +97,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en english: ");
 		                    escrito = leer.nextLine();
@@ -113,7 +113,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en alemán: ");
 		                    escrito = leer.nextLine();
@@ -129,7 +129,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en francés: ");
 		                    escrito = leer.nextLine();
@@ -141,7 +141,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.nom[a] = escrito;
 		                }
@@ -156,7 +156,7 @@ public class Espanhol {
 		                    System.out.println();
 		                }
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                manualEs[a] = escrito1;
 
@@ -172,7 +172,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Portugues.manualPt[a] = escrito1;
 
@@ -188,7 +188,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Ingles.manualEn[a] = escrito1;
 
@@ -204,7 +204,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Alemao.handbuch[a] = escrito1;
 
@@ -220,7 +220,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    Frances.manuelFr[a] = escrito1;
 		                }
@@ -251,7 +251,7 @@ public class Espanhol {
 		        for(int b = 0; b < nombre.length; b++) {
 		            if(nombre[b] == null) {
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Escriba el nombre de la directriz: ");
 		                escrito = leer.nextLine();
@@ -265,7 +265,7 @@ public class Espanhol {
 
 		                nombre[b] = escrito;
 		                String mostrar = escrito;
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 
 		                if (metodoRegistro == 2){
@@ -284,7 +284,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en english: ");
 		                    escrito = leer.nextLine();
@@ -300,7 +300,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en alemán: ");
 		                    escrito = leer.nextLine();
@@ -316,7 +316,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en francés: ");
 		                    escrito = leer.nextLine();
@@ -328,7 +328,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    Frances.nom[b] = escrito;
 		                }
@@ -343,7 +343,7 @@ public class Espanhol {
 		                    System.out.println();
 		                }
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("==============================================================================");
 		                System.out.println();
 		                manualEs[b] = escrito1;
 
@@ -359,7 +359,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Portugues.manualPt[b] = escrito1;
 
@@ -375,7 +375,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Ingles.manualEn[b] = escrito1;
 
@@ -391,7 +391,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    Alemao.handbuch[b] = escrito1;
 
@@ -407,7 +407,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.manuelFr[b] = escrito1;
 		                }
@@ -438,7 +438,7 @@ public class Espanhol {
 		        for(int c = 0; c < nombre.length; c++) {
 		            if(nombre[c] == null) {
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Escriba el nombre de la directriz: ");
 		                escrito = leer.nextLine();
@@ -452,7 +452,7 @@ public class Espanhol {
 
 		                nombre[c] = escrito;
 		                String mostrar = escrito;
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 
 		                if (metodoRegistro == 2){
@@ -471,7 +471,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en english: ");
 		                    escrito = leer.nextLine();
@@ -487,7 +487,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en alemán: ");
 		                    escrito = leer.nextLine();
@@ -503,7 +503,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en francés: ");
 		                    escrito = leer.nextLine();
@@ -515,7 +515,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.nom[c] = escrito;
 		                }
@@ -530,7 +530,7 @@ public class Espanhol {
 		                    System.out.println();
 		                }
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                manualEs[c] = escrito1;
 
@@ -546,7 +546,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Portugues.manualPt[c] = escrito1;
 
@@ -562,7 +562,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Ingles.manualEn[c] = escrito1;
 
@@ -578,7 +578,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Alemao.handbuch[c] = escrito1;
 
@@ -594,7 +594,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.manuelFr[c] = escrito1;
 		                }
@@ -625,7 +625,7 @@ public class Espanhol {
 		        for(int d = 0; d < nombre.length; d++) {
 		            if(nombre[d] == null) {
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Escriba el nombre de la directriz: ");
 		                escrito = leer.nextLine();
@@ -639,7 +639,7 @@ public class Espanhol {
 
 		                nombre[d] = escrito;
 		                String mostrar = escrito;
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("==============================================================================");
 		                System.out.println();
 
 		                if (metodoRegistro == 2){
@@ -658,7 +658,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en english: ");
 		                    escrito = leer.nextLine();
@@ -674,7 +674,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en alemán: ");
 		                    escrito = leer.nextLine();
@@ -690,7 +690,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en francés: ");
 		                    escrito = leer.nextLine();
@@ -702,7 +702,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.nom[d] = escrito;
 		                }
@@ -717,7 +717,7 @@ public class Espanhol {
 		                    System.out.println();
 		                }
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                manualEs[d] = escrito1;
 
@@ -733,7 +733,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Portugues.manualPt[d] = escrito1;
 
@@ -749,7 +749,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Ingles.manualEn[d] = escrito1;
 
@@ -765,7 +765,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    Alemao.handbuch[d] = escrito1;
 
@@ -781,7 +781,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.manuelFr[d] = escrito1;
 		                }
@@ -812,7 +812,7 @@ public class Espanhol {
 		        for(int e = 0; e < nombre.length; e++) {
 		            if(nombre[e] == null) {
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Escriba el nombre de la directriz: ");
 		                escrito = leer.nextLine();
@@ -826,7 +826,7 @@ public class Espanhol {
 
 		                nombre[e] = escrito;
 		                String mostrar = escrito;
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 
 		                if (metodoRegistro == 2){
@@ -845,7 +845,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en english: ");
 		                    escrito = leer.nextLine();
@@ -861,7 +861,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en alemán: ");
 		                    escrito = leer.nextLine();
@@ -877,7 +877,7 @@ public class Espanhol {
 
 		                    //---------------------------------------------------------------------------------------------------
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Escriba el nombre de la directriz en francés: ");
 		                    escrito = leer.nextLine();
@@ -889,7 +889,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Frances.nom[e] = escrito;
 		                }
@@ -904,7 +904,7 @@ public class Espanhol {
 		                    System.out.println();
 		                }
 
-		                System.out.println("=============================================================================="); //divisor
+		                System.out.println("==============================================================================");
 		                System.out.println();
 		                manualEs[e] = escrito1;
 
@@ -920,7 +920,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Portugues.manualPt[e] = escrito1;
 
@@ -936,7 +936,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Ingles.manualEn[e] = escrito1;
 
@@ -952,7 +952,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    Alemao.handbuch[e] = escrito1;
 
@@ -968,7 +968,7 @@ public class Espanhol {
 		                        System.out.println();
 		                    }
 
-		                    System.out.println("=============================================================================="); //divisor
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    Frances.manuelFr[e] = escrito1;
 		                }
@@ -992,7 +992,7 @@ public class Espanhol {
 	    	System.out.println("1- Nombre; \n2- Id; ");
 	    	metodoBusqueda = leer.nextLine();
 	    	System.out.println();
-	    	System.out.println("=============================================================================="); //divisor
+	    	System.out.println("=============================================================================="); 
 
 	    	boolean encontrado = false;
 
@@ -1009,11 +1009,11 @@ public class Espanhol {
 
 	    	            if(contador == 1) {
 
-	    	                System.out.println("=============================================================================="); //divisor
+	    	                System.out.println("=============================================================================="); 
 	    	                System.out.println();
 	    	                System.out.println("             ¡La directriz '" + nombreBusqueda + "' ya ha sido registrada!");
 	    	                System.out.println();
-	    	                System.out.println("=============================================================================="); //divisor
+	    	                System.out.println("=============================================================================="); 
 	    	                System.out.println("\n=========================== Directriz Registrada =============================");
 
 	    	                System.out.println();
@@ -1029,7 +1029,7 @@ public class Espanhol {
 	    	                encontrado = true;
 
 	    	            } else {
-	    	                System.out.println("=============================================================================="); //divisor
+	    	                System.out.println("==============================================================================");
 	    	                System.out.println("\n=========================== Directriz Registrada =============================");
 
 	    	                System.out.println();
@@ -1049,7 +1049,7 @@ public class Espanhol {
 	    	    }
 
 	    	    if(!encontrado) {
-	    	        System.out.println("=============================================================================="); //divisor
+	    	        System.out.println("=============================================================================="); 
 	    	        System.out.println();
 	    	        System.out.println("             ¡La directriz '" + nombreBusqueda + "' no está registrada!");
 	    	        System.out.println();
@@ -1065,11 +1065,11 @@ public class Espanhol {
 	    	    for(int f = 0; f < nombre.length; f++) {
 	    	        if(idBusqueda == (f + 1) && directriz[f] != null && !directriz[f].isEmpty()) {
 
-	    	            System.out.println("=============================================================================="); //divisor
+	    	            System.out.println("=============================================================================="); 
 	    	            System.out.println();
 	    	            System.out.println("             ¡La directriz con ID '" + idBusqueda + "' ya ha sido registrada!");
 	    	            System.out.println();
-	    	            System.out.println("=============================================================================="); //divisor
+	    	            System.out.println("=============================================================================="); 
 	    	            System.out.println("\n=========================== Directriz Registrada =============================");
 
 	    	            System.out.println();
@@ -1087,7 +1087,7 @@ public class Espanhol {
 	    	        }
 	    	    }
 	    	    if(!encontrado) {
-	    	        System.out.println("=============================================================================="); //divisor
+	    	        System.out.println("=============================================================================="); 
 	    	        System.out.println();
 	    	        System.out.println("             ¡La directriz con ID '" + idBusqueda + "' no está registrada!");
 	    	        System.out.println();
@@ -1118,7 +1118,7 @@ public class Espanhol {
 	    	            System.out.println("======================== Seleccione qué desea editar =========================\n");
 	    	            System.out.println("1- Nombre; \n2- Tipo; \n3- Directriz; \n4- Todo;");
 	    	            editar = leer.nextLine();
-	    	            String escribir = null;
+	    	            String escribir;
 	    	            System.out.println();
 	    	            System.out.println("==============================================================================");
 
@@ -1244,7 +1244,7 @@ public class Espanhol {
 	    	            System.out.println("======================== Seleccione qué desea editar =========================\n");
 	    				System.out.println("1- Nombre; \n2- Tipo; \n3- Orientación; \n4- Todo; ");
 	    				editar = leer.nextLine();
-	    				String escribir = null;
+	    				String escribir;
 	    				System.out.println();
 	    				System.out.println("==============================================================================");
 
@@ -1357,13 +1357,13 @@ public class Espanhol {
 	    					System.out.println("        ¡La orientación '" + edicion + "' fue editada a '" + nombre[h] + "'!");
 	    					System.out.println();
 
-	    				} // todo
+	    				} 
 
-	    			} // if
+	    			} 
 
-	    		} // for
+	    		} 
 
-	    	} // id
+	    	} 
 	         
 	        //ELIMINAR-------------------------------------------------------------------------------------------------------------
 
@@ -1374,7 +1374,7 @@ public class Espanhol {
 	    	System.out.println("1- Nombre; \n2- Id; ");
 	    	String metodoEliminar = leer.nextLine();
 	    	System.out.println();
-	    	System.out.println("=============================================================================="); // divisor
+	    	System.out.println("=============================================================================="); 
 
 	    	if (metodoEliminar.equalsIgnoreCase("nombre") || metodoEliminar.equalsIgnoreCase("1")) {
 
@@ -1465,7 +1465,7 @@ public class Espanhol {
 	    	
 	    } else if (menu.equalsIgnoreCase("Salir") || menu.equals("6")) {
 	    	System.out.println("\n¡Gracias por usar WegOne! \nVuelve pronto.");
-			System.out.println("\n=============================================================================="); //divisor
+			System.out.println("\n=============================================================================="); 
 	    }
 		
 		}while(!menu.equals("6") && !menu.equalsIgnoreCase("Salir"));

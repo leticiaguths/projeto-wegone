@@ -6,7 +6,7 @@ public class Portugues {
 	
 	Scanner leia = new Scanner(System.in);
 	
-	int idioma, pesquisarId = 0, acharEdicao = 0;
+	int pesquisarId = 0, acharEdicao = 0;
 	String menu = null, pesquisarNome = null, excluir, edicao, editar, formaPesquisa;
 	static String []nome = new String[100];
 	static String []manualPt = new String[100];
@@ -17,22 +17,22 @@ public class Portugues {
 		
 		Fixos.fixosPortugues();
 		
-		System.out.println("======================== Bem-vindo ao site da WegOne! ========================"); //introdução
-		System.out.println(); //quebra de linha
-		System.out.println("Aqui você vai conhecer nossos projetos, aprender sobre nossas soluções \ninovadoras e descobrir como estamos transformando ideias em tecnologia."); //oq vc vai ver aq
-		System.out.println(); //quebra de linha
+		System.out.println("======================== Bem-vindo ao site da WegOne! ========================"); 
+		System.out.println(); 
+		System.out.println("Aqui você vai conhecer nossos projetos, aprender sobre nossas soluções \ninovadoras e descobrir como estamos transformando ideias em tecnologia."); 
+		System.out.println(); 
 
 		do {
 
-		System.out.println("=============================================================================="); //divisor
-		System.out.println(); //quebra de linha
+		System.out.println("=============================================================================="); 
+		System.out.println(); 
 
-		System.out.println("====================== Selecione o que você precisa fazer ====================\n"); //shows the user what actions are available
-		System.out.println("1- Cadastrar uma orientação; \n2- Pesquisar uma orientação; \n3- Editar uma orientação; \n4- Excluir uma orientação; \n5- Trocar Idioma; \n6- Sair;"); //
+		System.out.println("====================== Selecione o que você precisa fazer ====================\n"); 
+		System.out.println("1- Cadastrar uma orientação; \n2- Pesquisar uma orientação; \n3- Editar uma orientação; \n4- Excluir uma orientação; \n5- Trocar Idioma; \n6- Sair;"); 
 		menu = leia.nextLine();
 
-		System.out.println(); //quebra de linha
-		System.out.println("=============================================================================="); //divisor
+		System.out.println(); 
+		System.out.println("==============================================================================");
 
 		//CADASTRO-------------------------------------------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ public class Portugues {
 				for(int a = 0; a < nome.length; a++) {			
 					if(nome[a] == null) {
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Digite o nome da orientação: ");
 					digitado = leia.nextLine();
@@ -77,7 +77,7 @@ public class Portugues {
 						
 					nome[a] = digitado;
 					String mostrar = digitado;
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (formaCadastro == 2){
@@ -96,7 +96,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em espanhol: ");
 						digitado = leia.nextLine();
@@ -112,7 +112,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em alemão: ");
 						digitado = leia.nextLine();
@@ -128,7 +128,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em francês: ");
 						digitado = leia.nextLine();
@@ -140,7 +140,7 @@ public class Portugues {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[a] = digitado;
 						
@@ -156,7 +156,7 @@ public class Portugues {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("==============================================================================");
 					System.out.println();
 					manualPt[a] = digitado1;
 					
@@ -172,7 +172,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Ingles.manualEn[a] = digitado1;
 						
@@ -188,7 +188,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[a] = digitado1;
 						
@@ -204,7 +204,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[a] = digitado1;
 						
@@ -220,7 +220,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[a] = digitado1;
 						
@@ -252,7 +252,7 @@ public class Portugues {
 				for(int b = 0; b < nome.length; b++) {			
 					if(nome[b] == null) {
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Digite o nome da orientação: ");
 					digitado = leia.nextLine();
@@ -266,7 +266,7 @@ public class Portugues {
 						
 					nome[b] = digitado;
 					String mostrar = digitado;
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (formaCadastro == 2){
@@ -285,7 +285,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em espanhol: ");
 						digitado = leia.nextLine();
@@ -301,7 +301,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em alemão: ");
 						digitado = leia.nextLine();
@@ -317,7 +317,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em francês: ");
 						digitado = leia.nextLine();
@@ -329,7 +329,7 @@ public class Portugues {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[b] = digitado;
 						
@@ -345,7 +345,7 @@ public class Portugues {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualPt[b] = digitado1;
 					
@@ -361,7 +361,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Ingles.manualEn[b] = digitado1;
 						
@@ -377,7 +377,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[b] = digitado1;
 						
@@ -393,7 +393,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[b] = digitado1;
 						
@@ -409,7 +409,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[b] = digitado1;
 						
@@ -441,7 +441,7 @@ public class Portugues {
 				for(int c = 0; c < nome.length; c++) {			
 					if(nome[c] == null) {
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Digite o nome da orientação: ");
 					digitado = leia.nextLine();
@@ -455,7 +455,7 @@ public class Portugues {
 						
 					nome[c] = digitado;
 					String mostrar = digitado;
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (formaCadastro == 2){
@@ -474,7 +474,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em espanhol: ");
 						digitado = leia.nextLine();
@@ -490,7 +490,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em alemão: ");
 						digitado = leia.nextLine();
@@ -506,7 +506,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em francês: ");
 						digitado = leia.nextLine();
@@ -518,7 +518,7 @@ public class Portugues {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[c] = digitado;
 						
@@ -534,7 +534,7 @@ public class Portugues {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualPt[c] = digitado1;
 					
@@ -550,7 +550,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Ingles.manualEn[c] = digitado1;
 						
@@ -566,7 +566,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[c] = digitado1;
 						
@@ -582,7 +582,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[c] = digitado1;
 						
@@ -598,7 +598,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[c] = digitado1;
 						
@@ -630,7 +630,7 @@ public class Portugues {
 				for(int d = 0; d < nome.length; d++) {			
 					if(nome[d] == null) {
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Digite o nome da orientação: ");
 					digitado = leia.nextLine();
@@ -644,7 +644,7 @@ public class Portugues {
 						
 					nome[d] = digitado;
 					String mostrar = digitado;
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (formaCadastro == 2){
@@ -663,7 +663,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em espanhol: ");
 						digitado = leia.nextLine();
@@ -679,7 +679,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("==============================================================================");
 						System.out.println();
 						System.out.println("Digite o nome da orientação em alemão: ");
 						digitado = leia.nextLine();
@@ -695,7 +695,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em francês: ");
 						digitado = leia.nextLine();
@@ -707,7 +707,7 @@ public class Portugues {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[d] = digitado;
 						
@@ -723,7 +723,7 @@ public class Portugues {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualPt[d] = digitado1;
 					
@@ -739,7 +739,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Ingles.manualEn[d] = digitado1;
 						
@@ -755,7 +755,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[d] = digitado1;
 						
@@ -771,7 +771,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[d] = digitado1;
 						
@@ -787,7 +787,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("==============================================================================");
 						System.out.println();
 						Frances.manuelFr[d] = digitado1;
 						
@@ -819,7 +819,7 @@ public class Portugues {
 				for(int e = 0; e < nome.length; e++) {			
 					if(nome[e] == null) {
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Digite o nome da orientação: ");
 					digitado = leia.nextLine();
@@ -833,7 +833,7 @@ public class Portugues {
 						
 					nome[e] = digitado;
 					String mostrar = digitado;
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (formaCadastro == 2){
@@ -852,7 +852,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em espanhol: ");
 						digitado = leia.nextLine();
@@ -868,7 +868,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em alemão: ");
 						digitado = leia.nextLine();
@@ -884,7 +884,7 @@ public class Portugues {
 						
 						//---------------------------------------------------------------------------------------------------
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Digite o nome da orientação em francês: ");
 						digitado = leia.nextLine();
@@ -896,7 +896,7 @@ public class Portugues {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[e] = digitado;
 						
@@ -912,7 +912,7 @@ public class Portugues {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divisor
+					System.out.println("==============================================================================");
 					System.out.println();
 					manualPt[e] = digitado1;
 					
@@ -928,7 +928,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Ingles.manualEn[e] = digitado1;
 						
@@ -944,7 +944,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[e] = digitado1;
 						
@@ -960,7 +960,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[e] = digitado1;
 						
@@ -976,7 +976,7 @@ public class Portugues {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divisor
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[e] = digitado1;
 						
@@ -1001,7 +1001,7 @@ public class Portugues {
 	    	System.out.println("1- Nome; \n2- Id; ");
 	        formaPesquisa = leia.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divisor
+			System.out.println("=============================================================================="); 
 	        
 	        boolean encontrado = false;
 	        
@@ -1018,11 +1018,11 @@ public class Portugues {
 	                    
 	                    if(contagem == 1) {
 	                    	
-	    					System.out.println("=============================================================================="); //divisor
+	    					System.out.println("==============================================================================");
 	    					System.out.println();
 	                        System.out.println("             A orientação '" + pesquisarNome + "' já foi cadastrada!");
 	                        System.out.println();
-	    					System.out.println("=============================================================================="); //divisor
+	    					System.out.println("=============================================================================="); 
 	                        System.out.println("\n========================== Orientação Cadastrada =============================");
 	                        
 	                        System.out.println();
@@ -1038,7 +1038,7 @@ public class Portugues {
 	                        encontrado = true;
 	                    
 	                    } else {
-	    					System.out.println("=============================================================================="); //divisor
+	    					System.out.println("=============================================================================="); 
 	                        System.out.println("\n========================== Orientação Cadastrada =============================");
 	                        
 	                        System.out.println();
@@ -1058,7 +1058,7 @@ public class Portugues {
 	            }
 	                    
 	            if(!encontrado) {
-	            	System.out.println("=============================================================================="); //divisor
+	            	System.out.println("=============================================================================="); 
 					System.out.println();
                     System.out.println("             A orientação '" + pesquisarNome + "' não está cadastrada!");
                     System.out.println();
@@ -1074,11 +1074,11 @@ public class Portugues {
 	            for(int f = 0; f < nome.length; f++) {
 	                if(pesquisarId == (f + 1) && orientacao[f] != null && !orientacao[f].isEmpty()) {
 	                	
-	                	System.out.println("=============================================================================="); //divisor
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
                         System.out.println("             A orientação '" + pesquisarId + "' já foi cadastrada!");
                         System.out.println();
-    					System.out.println("=============================================================================="); //divisor
+    					System.out.println("=============================================================================="); 
                         System.out.println("\n=========================== Orientação Cadastrada ============================");
 	                    
 	                    System.out.println();
@@ -1096,7 +1096,7 @@ public class Portugues {
 	                }
 	            }
 	            if(!encontrado) {
-	                System.out.println("=============================================================================="); //divisor
+	                System.out.println("=============================================================================="); 
 					System.out.println();
                     System.out.println("             A orientação '" + pesquisarId + "' não está cadastrada!");
                     System.out.println();
@@ -1112,7 +1112,7 @@ public class Portugues {
 	    	System.out.println("1- Nome; \n2- Id; ");
 	    	String formaEditar = leia.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divisor
+			System.out.println("=============================================================================="); 
 	    		         
 	         if (formaEditar.equals("1") || formaEditar.equalsIgnoreCase("nome")) {
 	        	System.out.println();
@@ -1126,9 +1126,9 @@ public class Portugues {
 	     	            System.out.println("====================== Selecione o que você deseja editar =======================\n");
 	     		    	System.out.println("1- Nome; \n2- Tipo; \n3- Orientação; \n4- Tudo; ");
 	     		    	editar = leia.nextLine();
-	     		    	String dig = null;
+	     		    	String dig;
 	     		        System.out.println();
-	     				System.out.println("=============================================================================="); //divisor
+	     				System.out.println("==============================================================================");
 	     				
 	     				if(editar.equalsIgnoreCase("nome") || editar.equalsIgnoreCase("1")) {
 	     					
@@ -1143,7 +1143,7 @@ public class Portugues {
 	     						nome[h] = dig;
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divisor
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("            A orientação '" + edicao + "' foi editada para '" + nome[h] + "'!");
 	                        System.out.println();
@@ -1169,7 +1169,7 @@ public class Portugues {
 	     						orientacao[h] = "Manual de conduta e Operações setoriais";
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divisor
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               A orientação '" + edicao + "' foi editada!");
 	                        System.out.println();
@@ -1186,7 +1186,7 @@ public class Portugues {
 	     						manualPt[h] = dig;
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divisor
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               A orientação '" + edicao + "' foi editada!");
 	                        System.out.println();
@@ -1207,7 +1207,7 @@ public class Portugues {
 	     					System.out.println("1- Manual de Operação;\n2- Procedimento de Segurança;\n3- Manutenção e Reparos;\n4- Teste e Diagnósticos;\n5- Manual de conduta e Operações setoriais;");	     					
 	     					dig = leia.nextLine();
 	     					System.out.println();
-		     				System.out.println("=============================================================================="); //divisor
+		     				System.out.println("=============================================================================="); 
 	     					
 	     					if (dig.trim().isEmpty()){
 	     						break;
@@ -1234,7 +1234,7 @@ public class Portugues {
 	     						manualPt[h] = dig;
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divisor
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("            A orientação '" + edicao + "' foi editada para '" + nome[h] + "'!");
 	                        System.out.println();
@@ -1257,9 +1257,9 @@ public class Portugues {
 	                	System.out.println("====================== Selecione o que você deseja editar =======================\n");
 		     		    System.out.println("1- Nome; \n2- Tipo; \n3- Orientação; \n4- Tudo; ");
 		     		    editar = leia.nextLine();
-		     		    String dig = null;
+		     		    String dig;
 		     		    System.out.println();
-		     		    System.out.println("=============================================================================="); //divisor
+		     		    System.out.println("=============================================================================="); 
 		     				
 		     			if(editar.equalsIgnoreCase("nome") || editar.equalsIgnoreCase("1")) {
 		     					
@@ -1274,7 +1274,7 @@ public class Portugues {
 		     					nome[h] = dig;
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divisor
+		     				System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("            A orientação '" + acharEdicao + "' foi editada para '" + nome[h] + "'!");
 	                        System.out.println();
@@ -1300,7 +1300,7 @@ public class Portugues {
 		     					orientacao[h] = "Manual de conduta e Operações setoriais";
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divisor
+		     				System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               A orientação '" + acharEdicao + "' foi editada!");
 	                        System.out.println();
@@ -1317,7 +1317,7 @@ public class Portugues {
 		     					manualPt[h] = dig;
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divisor
+		     				System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               A orientação '" + acharEdicao + "' foi editada!");
 	                        System.out.println();
@@ -1338,7 +1338,7 @@ public class Portugues {
 		     				System.out.println("1- Manual de Operação;\n2- Procedimento de Segurança;\n3- Manutenção e Reparos;\n4- Teste e Diagnósticos;\n5- Manual de conduta e Operações setoriais;");	     					
 		     				dig = leia.nextLine();
 		     				System.out.println();
-			     			System.out.println("=============================================================================="); //divisor
+			     			System.out.println("=============================================================================="); 
 		     					
 		     				if (dig.trim().isEmpty()){
 		     					break;
@@ -1365,18 +1365,18 @@ public class Portugues {
 		     					manualPt[h] = dig;
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divisor
+		     				System.out.println("==============================================================================");
 	    					System.out.println();
 	                        System.out.println("            A orientação '" + acharEdicao + "' foi editada para '" + nome[h] + "'!");
 	                        System.out.println();
 	      			
-	      				} ///tudo
+	      				} 
 	         
-	      			} //if
+	      			} 
 	         
-	      		} //for
+	      		} 
 	         
-	      	} //id
+	      	}
 	         
 	        //EXCLUIR-------------------------------------------------------------------------------------------------------------
 
@@ -1387,7 +1387,7 @@ public class Portugues {
 	    	System.out.println("1- Nome; \n2- Id; ");
 	    	String formaExcluir = leia.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divisor
+			System.out.println("=============================================================================="); 
 
 	        	if (formaExcluir.equalsIgnoreCase("nome") || formaExcluir.equalsIgnoreCase("1")) {
 	 
@@ -1421,13 +1421,13 @@ public class Portugues {
 	                }
 
 	                if (remover) {
-	                	System.out.println("=============================================================================="); //divisor
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("          Todas as orientações com o nome '" + excluir + "' foram excluídas.");
                         System.out.println();
 	                	
 	                } else {
-	                	System.out.println("=============================================================================="); //divisor
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("     A orientação '" + excluir + "' não foi localizada, portanto, não foi excluída.");
                         System.out.println();
@@ -1455,13 +1455,13 @@ public class Portugues {
 	                	orientacao[id - 1] = null;
 	                	id--;
 	                   
-	                	System.out.println("=============================================================================="); //divisor
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("                      A orientação '" + excluirId + "' foi excluída.");
                         System.out.println();
 
 	                } else {
-	                	System.out.println("=============================================================================="); //divisor
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("     A orientação '" + excluirId + "' não foi localizada, portanto, não foi excluída.");
                         System.out.println();
@@ -1479,7 +1479,7 @@ public class Portugues {
 	    	
 	    } else if (menu.equalsIgnoreCase("sair") || menu.equals("6")) {
             System.out.println("\nObrigado por utilizar a WegOne! \nVolte Sempre.");
-            System.out.println("\n=============================================================================="); //divisor
+            System.out.println("\n=============================================================================="); 
         }
 		
 		}while(!menu.equals("6") && !menu.equalsIgnoreCase("sair"));

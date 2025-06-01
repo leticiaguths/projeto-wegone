@@ -6,7 +6,7 @@ public class Alemao {
 	
 	Scanner lesen = new Scanner(System.in);
 	
-	int sprache, suchId = 0, findeBearbeitung = 0;
+	int suchId, findeBearbeitung = 0;
 	String menü = null, suchName = null, löschen, bearbeitung, bearbeiten, suchMethode;
 	static String []nameDe = new String[100]; 
 	static String []handbuch = new String[100]; 
@@ -17,22 +17,22 @@ public class Alemao {
 		
 		Fixos.fixosAlemao();
 		
-		System.out.println("===================== Willkommen auf der WegOne-Website! ====================="); //einführung
-		System.out.println(); //zeilenumbruch
-		System.out.println("Hier lernen Sie unsere Projekte kennen, erfahren mehr über unsere innovativen \nLösungen und entdecken, wie wir Ideen in Technologie verwandeln."); //beschreibung
-		System.out.println(); //zeilenumbruch
+		System.out.println("===================== Willkommen auf der WegOne-Website! ====================="); 
+		System.out.println(); 
+		System.out.println("Hier lernen Sie unsere Projekte kennen, erfahren mehr über unsere innovativen \nLösungen und entdecken, wie wir Ideen in Technologie verwandeln."); 
+		System.out.println(); 
 
 		do {
 
-			System.out.println("=============================================================================="); //Trenner
-			System.out.println(); //Zeilenumbruch
+			System.out.println("=============================================================================="); 
+			System.out.println(); 
 
-			System.out.println("==================== Wählen Sie, was Sie jetzt tun möchten ===================\n"); //zeigt dem Benutzer, welche Aktionen verfügbar sind
+			System.out.println("==================== Wählen Sie, was Sie jetzt tun möchten ===================\n"); 
 			System.out.println("1- Eine Richtlinie registrieren; \n2- Eine Richtlinie suchen; \n3- Eine Richtlinie bearbeiten; \n4- Eine Richtlinie löschen; \n5- Sprache ändern; \n6- Beenden;");
 			menü = lesen.nextLine();
 
-			System.out.println(); //Zeilenumbruch
-			System.out.println("=============================================================================="); //Trenner
+			System.out.println(); 
+			System.out.println("=============================================================================="); 
 			
 			//REGISTRIEREN-------------------------------------------------------------------------------------------------------------
 
@@ -1040,7 +1040,7 @@ public class Alemao {
 		    	System.out.println();
 		    	System.out.println("===================== Wählen Sie die Bearbeitungsmethode =====================\n");
 		    	System.out.println("1- Name; \n2- ID; ");
-		    	String suchMethode = lesen.nextLine();
+		    	suchMethode = lesen.nextLine();
 		    	System.out.println();
     	        System.out.println("==============================================================================");
 
@@ -1056,7 +1056,7 @@ public class Alemao {
 		    	            System.out.println("======================== Was möchten Sie bearbeiten? =========================\n");
 		    	            System.out.println("1- Name; \n2- Typ; \n3- Richtlinie; \n4- Alle; ");
 		    	            bearbeiten = lesen.nextLine();
-		    	            String eingabe = null;
+		    	            String eingabe;
 		    	            System.out.println();
 			    	        System.out.println("==============================================================================");
 
@@ -1183,7 +1183,7 @@ public class Alemao {
 		    	            System.out.println("======================== Was möchten Sie bearbeiten? =========================\n");
 		    	            System.out.println("1- Name; \n2- Typ; \n3- Richtlinie; \n4- Alle; ");
 		    	            bearbeiten = lesen.nextLine();
-		    	            String eingabe = null;
+		    	            String eingabe;
 		    	            System.out.println();
 			    	        System.out.println("==============================================================================");
 

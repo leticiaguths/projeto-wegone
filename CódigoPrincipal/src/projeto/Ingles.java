@@ -6,7 +6,7 @@ public class Ingles {
 	
 	Scanner read = new Scanner(System.in);
 	
-	int language, searchId = 0, findEdition = 0;
+	int searchId = 0, findEdition = 0;
 	String menu = null, searchName = null, delete, edition, edit, searchMethod;
 	static String []name = new String[100];
 	static String []manualEn = new String[100];
@@ -17,22 +17,22 @@ public class Ingles {
 		
 		Fixos.fixosIngles();
 		
-		System.out.println("======================== Welcome to the WegOne site! ========================="); //introduction
-		System.out.println(); //line break
-		System.out.println("Here you will get to know our projects, learn about our innovative solutions \nand discover how we are turning ideas into technology."); //description
-		System.out.println(); //line break
+		System.out.println("======================== Welcome to the WegOne site! ========================="); 
+		System.out.println();
+		System.out.println("Here you will get to know our projects, learn about our innovative solutions \nand discover how we are turning ideas into technology."); 
+		System.out.println(); 
 
 		do {
 
-		System.out.println("=============================================================================="); //divider
-		System.out.println(); //line break
+		System.out.println("=============================================================================="); 
+		System.out.println(); 
 
-		System.out.println("====================== Select what do you need to do now =====================\n"); //shows the user what actions are available
-		System.out.println("1- Register a guideline; \n2- Search for a guideline; \n3- Edit a guideline; \n4- Delete a guideline; \n5- Change Language; \n6- Exit;"); //
+		System.out.println("====================== Select what do you need to do now =====================\n"); 
+		System.out.println("1- Register a guideline; \n2- Search for a guideline; \n3- Edit a guideline; \n4- Delete a guideline; \n5- Change Language; \n6- Exit;"); 
 		menu = read.nextLine();
 
-		System.out.println(); //line break
-		System.out.println("=============================================================================="); //divider
+		System.out.println(); 
+		System.out.println("=============================================================================="); 
 
 		//REGISTER-------------------------------------------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ public class Ingles {
 				for(int a = 0; a < name.length; a++) {			
 					if(name[a] == null) {
 				
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Type the name of the guideline: ");
 					writed = read.nextLine();
@@ -77,7 +77,7 @@ public class Ingles {
 						
 					name[a] = writed;
 					String show = writed;
-					System.out.println("=============================================================================="); //divider
+					System.out.println("==============================================================================");
 					System.out.println();
 					
 					if (methodRegister == 2){
@@ -96,7 +96,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("==============================================================================");
 						System.out.println();
 						System.out.println("Type the name of the guideline in spanish: ");
 						writed = read.nextLine();
@@ -112,7 +112,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in german: ");
 						writed = read.nextLine();
@@ -128,7 +128,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in french: ");
 						writed = read.nextLine();
@@ -140,7 +140,7 @@ public class Ingles {
 							System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[a] = writed;
 						
@@ -156,7 +156,7 @@ public class Ingles {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualEn[a] = writed1;
 					
@@ -172,7 +172,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Portugues.manualPt[a] = writed1;
 						
@@ -188,7 +188,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[a] = writed1;
 						
@@ -204,7 +204,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[a] = writed1;
 						
@@ -220,7 +220,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[a] = writed1;
 					}
@@ -251,7 +251,7 @@ public class Ingles {
 				for(int b = 0; b < name.length; b++) {			
 					if(name[b] == null) {
 				
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Type the name of the guideline: ");
 					writed = read.nextLine();
@@ -265,7 +265,7 @@ public class Ingles {
 						
 					name[b] = writed;
 					String show = writed;
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (methodRegister == 2){
@@ -284,7 +284,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in spanish: ");
 						writed = read.nextLine();
@@ -300,7 +300,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in german: ");
 						writed = read.nextLine();
@@ -316,7 +316,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in french: ");
 						writed = read.nextLine();
@@ -328,7 +328,7 @@ public class Ingles {
 							System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[b] = writed;
 						
@@ -344,7 +344,7 @@ public class Ingles {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualEn[b] = writed1;
 					
@@ -360,7 +360,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Portugues.manualPt[b] = writed1;
 						
@@ -376,7 +376,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[b] = writed1;
 						
@@ -392,7 +392,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[b] = writed1;
 						
@@ -406,11 +406,11 @@ public class Ingles {
 						    System.out.println("Invalid. Try again: ");
 						    writed1 = read.nextLine();
 						    System.out.println();
-						    System.out.println("=============================================================================="); //divider
+						    System.out.println("=============================================================================="); 
 							System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[b] = writed1;
 					}
@@ -441,7 +441,7 @@ public class Ingles {
 				for(int c = 0; c < name.length; c++) {			
 					if(name[c] == null) {
 				
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Type the name of the guideline: ");
 					writed = read.nextLine();
@@ -455,7 +455,7 @@ public class Ingles {
 						
 					name[c] = writed;
 					String show = writed;
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (methodRegister == 2){
@@ -474,7 +474,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in spanish: ");
 						writed = read.nextLine();
@@ -490,7 +490,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("==============================================================================");
 						System.out.println();
 						System.out.println("Type the name of the guideline in german: ");
 						writed = read.nextLine();
@@ -506,7 +506,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in french: ");
 						writed = read.nextLine();
@@ -518,7 +518,7 @@ public class Ingles {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[c] = writed;
 						
@@ -534,7 +534,7 @@ public class Ingles {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualEn[c] = writed1;
 					
@@ -550,7 +550,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Portugues.manualPt[c] = writed1;
 						
@@ -566,7 +566,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[c] = writed1;
 						
@@ -582,7 +582,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[c] = writed1;
 						
@@ -598,7 +598,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.manuelFr[c] = writed1;
 					}
@@ -629,7 +629,7 @@ public class Ingles {
 				for(int d = 0; d < name.length; d++) {			
 					if(name[d] == null) {
 				
-					System.out.println("=============================================================================="); //divider
+					System.out.println("==============================================================================");
 					System.out.println();
 					System.out.println("Type the name of the guideline: ");
 					writed = read.nextLine();
@@ -643,7 +643,7 @@ public class Ingles {
 						
 					name[d] = writed;
 					String show = writed;
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (methodRegister == 2){
@@ -662,7 +662,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in spanish: ");
 						writed = read.nextLine();
@@ -678,7 +678,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in german: ");
 						writed = read.nextLine();
@@ -694,7 +694,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in french: ");
 						writed = read.nextLine();
@@ -706,7 +706,7 @@ public class Ingles {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[d] = writed;
 						
@@ -722,7 +722,7 @@ public class Ingles {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualEn[d] = writed1;
 					
@@ -738,7 +738,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Portugues.manualPt[d] = writed1;
 						
@@ -754,7 +754,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[d] = writed1;
 						
@@ -770,7 +770,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[d] = writed1;
 						
@@ -786,7 +786,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("==============================================================================");
 						System.out.println();
 						Frances.manuelFr[d] = writed1;
 					}
@@ -817,7 +817,7 @@ public class Ingles {
 				for(int e = 0; e < name.length; e++) {			
 					if(name[e] == null) {
 				
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					System.out.println("Type the name of the guideline: ");
 					writed = read.nextLine();
@@ -831,7 +831,7 @@ public class Ingles {
 						
 					name[e] = writed;
 					String show = writed;
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					
 					if (methodRegister == 2){
@@ -850,7 +850,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in spanish: ");
 						writed = read.nextLine();
@@ -866,7 +866,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						System.out.println("Type the name of the guideline in german: ");
 						writed = read.nextLine();
@@ -882,7 +882,7 @@ public class Ingles {
 						
 						//---------------------------------------------------------------------------------------------------
 
-						System.out.println("=============================================================================="); //divider
+						System.out.println("==============================================================================");
 						System.out.println();
 						System.out.println("Type the name of the guideline in french: ");
 						writed = read.nextLine();
@@ -894,7 +894,7 @@ public class Ingles {
 							System.out.println();
 						}
 							
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Frances.nom[e] = writed;
 						
@@ -910,7 +910,7 @@ public class Ingles {
 					    System.out.println();
 					}
 					
-					System.out.println("=============================================================================="); //divider
+					System.out.println("=============================================================================="); 
 					System.out.println();
 					manualEn[e] = writed1;
 					
@@ -926,7 +926,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Portugues.manualPt[e] = writed1;
 						
@@ -942,7 +942,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Espanhol.manualEs[e] = writed1;
 						
@@ -958,7 +958,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("=============================================================================="); 
 						System.out.println();
 						Alemao.handbuch[e] = writed1;
 						
@@ -974,7 +974,7 @@ public class Ingles {
 						    System.out.println();
 						}
 						
-						System.out.println("=============================================================================="); //divider
+						System.out.println("==============================================================================");
 						System.out.println();
 						Frances.manuelFr[e] = writed1;
 					}
@@ -998,7 +998,7 @@ public class Ingles {
 	    	System.out.println("1- Name; \n2- Id; ");
 	        searchMethod = read.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divider
+			System.out.println("=============================================================================="); 
 	        
 	        boolean found = false;
 	        
@@ -1015,11 +1015,11 @@ public class Ingles {
 	                    
 	                    if(count == 1) {
 	                    	
-	    					System.out.println("=============================================================================="); //divider
+	    					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("             The guideline '" + searchName + "' has already been registered!");
 	                        System.out.println();
-	    					System.out.println("=============================================================================="); //divider
+	    					System.out.println("=============================================================================="); 
 	                        System.out.println("\n=========================== Registered Guideline =============================");
 	                        
 	                        System.out.println();
@@ -1035,7 +1035,7 @@ public class Ingles {
 	                        found = true;
 	                    
 	                    } else {
-	    					System.out.println("=============================================================================="); //divider
+	    					System.out.println("=============================================================================="); 
 	                        System.out.println("\n=========================== Registered Guideline =============================");
 	                        
 	                        System.out.println();
@@ -1055,7 +1055,7 @@ public class Ingles {
 	            }
 	                    
 	            if(!found) {
-	            	System.out.println("=============================================================================="); //divider
+	            	System.out.println("=============================================================================="); 
 					System.out.println();
                     System.out.println("             The guideline '" + searchName + "' is not registered!");
                     System.out.println();
@@ -1071,11 +1071,11 @@ public class Ingles {
 	            for(int f = 0; f < name.length; f++) {
 	                if(searchId == (f + 1) && guideline[f] != null && !guideline[f].isEmpty()) {
 	                	
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
                         System.out.println("             The guideline '" + searchId + "' has already been registered!");
                         System.out.println();
-    					System.out.println("=============================================================================="); //divider
+    					System.out.println("=============================================================================="); 
                         System.out.println("\n=========================== Registered Guideline =============================");
 	                    
 	                    System.out.println();
@@ -1093,7 +1093,7 @@ public class Ingles {
 	                }
 	            }
 	            if(!found) {
-	                System.out.println("=============================================================================="); //divider
+	                System.out.println("=============================================================================="); 
 					System.out.println();
                     System.out.println("             The guideline '" + searchId + "' is not registered!");
                     System.out.println();
@@ -1109,7 +1109,7 @@ public class Ingles {
 	    	System.out.println("1- Name; \n2- Id; ");
 	    	String editMethod = read.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divider
+			System.out.println("=============================================================================="); 
 	    		         
 	         if (editMethod.equals("1") || editMethod.equalsIgnoreCase("Name")) {
 	        	System.out.println();
@@ -1123,9 +1123,9 @@ public class Ingles {
 	     	            System.out.println("====================== Select what do you need to edit =======================\n");
 	     		    	System.out.println("1- Name; \n2- Type; \n3- Guideline; \n4- All; ");
 	     		    	edit = read.nextLine();
-	     		    	String wri = null;
+	     		    	String wri;
 	     		        System.out.println();
-	     				System.out.println("=============================================================================="); //divider
+	     				System.out.println("==============================================================================");
 	     				
 	     				if(edit.equalsIgnoreCase("Name") || edit.equalsIgnoreCase("1")) {
 	     					
@@ -1140,7 +1140,7 @@ public class Ingles {
 	     						name[h] = wri;
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divider
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("         The guideline '" + edition + "' has been edited to '" + name[h] + "'!");
 	                        System.out.println();
@@ -1166,7 +1166,7 @@ public class Ingles {
 	     						guideline[h] = "Code of Conduct and Sectorial Operations";
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divider
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               The guideline '" + edition + "' has been edited!");
 	                        System.out.println();
@@ -1183,7 +1183,7 @@ public class Ingles {
 	     						manualEn[h] = wri;
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divider
+	     					System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               The guideline '" + edition + "' has been edited!");
 	                        System.out.println();
@@ -1204,7 +1204,7 @@ public class Ingles {
 	     					System.out.println("1- Operation Manual;\n2- Safety Procedure;\n3- Maintenance and Repairs;\n4- Testing and Diagnostics;\n5- Code of Conduct and Sectorial Operations;");	     					
 	     					wri = read.nextLine();
 	     					System.out.println();
-		     				System.out.println("=============================================================================="); //divider
+		     				System.out.println("==============================================================================");
 	     					
 	     					if (wri.trim().isEmpty()){
 	     						break;
@@ -1231,7 +1231,7 @@ public class Ingles {
 	     						manualEn[h] = wri;
 	     					}
 	     					
-	     					System.out.println("=============================================================================="); //divider
+	     					System.out.println("==============================================================================");
 	    					System.out.println();
 	                        System.out.println("         The guideline '" + edition + "' has been edited to '" + name[h] + "'!");
 	                        System.out.println();
@@ -1254,9 +1254,9 @@ public class Ingles {
 	                	System.out.println("====================== Select what do you need to edit =======================\n");
 		     		    System.out.println("1- Name; \n2- Type; \n3- Guideline; \n4- All; ");
 		     		    edit = read.nextLine();
-		     		    String wri = null;
+		     		    String wri;
 		     		    System.out.println();
-		     		    System.out.println("=============================================================================="); //divider
+		     		    System.out.println("=============================================================================="); 
 		     				
 		     			if(edit.equalsIgnoreCase("Name") || edit.equalsIgnoreCase("1")) {
 		     					
@@ -1271,7 +1271,7 @@ public class Ingles {
 		     					name[h] = wri;
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divider
+		     				System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("         The guideline '" + edition + "' has been edited to '" + name[h] + "'!");
 	                        System.out.println();
@@ -1297,7 +1297,7 @@ public class Ingles {
 		     					guideline[h] = "Code of Conduct and Sectorial Operations";
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divider
+		     				System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               The guideline '" + edition + "' has been edited!");
 	                        System.out.println();
@@ -1314,7 +1314,7 @@ public class Ingles {
 		     					manualEn[h] = wri;
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divider
+		     				System.out.println("=============================================================================="); 
 	    					System.out.println();
 	                        System.out.println("               The guideline '" + edition + "' has been edited!");
 	                        System.out.println();
@@ -1335,7 +1335,7 @@ public class Ingles {
 		     				System.out.println("1- Operation Manual;\n2- Safety Procedure;\n3- Maintenance and Repairs;\n4- Testing and Diagnostics;\n5- Code of Conduct and Sectorial Operations;");	     					
 		     				wri = read.nextLine();
 		     				System.out.println();
-			     			System.out.println("=============================================================================="); //divider
+			     			System.out.println("=============================================================================="); 
 		     					
 		     				if (wri.trim().isEmpty()){
 		     					break;
@@ -1362,18 +1362,18 @@ public class Ingles {
 		     					manualEn[h] = wri;
 		     				}
 		     				
-		     				System.out.println("=============================================================================="); //divider
+		     				System.out.println("==============================================================================");
 	    					System.out.println();
 	                        System.out.println("         The guideline '" + edition + "' has been edited to '" + name[h] + "'!");
 	                        System.out.println();
 	      			
-	      				} ///all
+	      				} 
 	         
-	      			} //if
+	      			} 
 	         
-	      		} //for
+	      		} 
 	         
-	      	} //id
+	      	} 
 	         
 	        //DELETE-------------------------------------------------------------------------------------------------------------
 
@@ -1384,7 +1384,7 @@ public class Ingles {
 	    	System.out.println("1- Name; \n2- Id; ");
 	    	String deleteMethod = read.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divider
+			System.out.println("==============================================================================");
 
 	        	if (deleteMethod.equalsIgnoreCase("name") || deleteMethod.equalsIgnoreCase("1")) {
 	 
@@ -1418,13 +1418,13 @@ public class Ingles {
 	                }
 
 	                if (remove) {
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("          All guidelines with the name '" + delete + "' have been deleted.");
                         System.out.println();
 	                	
 	                } else {
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("     The guideline '" + delete + "' was not found, therefore, it was not deleted.");
                         System.out.println();
@@ -1452,13 +1452,13 @@ public class Ingles {
 	                	guideline[id - 1] = null;
 	                	id--;
 	                   
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("                      The guideline '" + deleteId + "' has been deleted.");
                         System.out.println();
 
 	                } else {
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("        The guideline '" + deleteId + "' was not found, therefore, it was not deleted.");
                         System.out.println();
@@ -1476,7 +1476,7 @@ public class Ingles {
 	    	
 	    } else if(menu.equalsIgnoreCase("exit") || menu.equals("6")) {
 	    	System.out.println("\nThank you for using WegOne! \nCome back soon.");
-			System.out.println("\n=============================================================================="); //divisor
+			System.out.println("\n=============================================================================="); 
 	    }
 		
 		}while(!menu.equals("6") && !menu.equalsIgnoreCase("Exit"));

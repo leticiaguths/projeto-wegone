@@ -6,7 +6,7 @@ public class Frances {
 	
 	Scanner lire = new Scanner(System.in);
 
-	int langue, rechercherId = 0, trouverEdition = 0;
+	int rechercherId = 0, trouverEdition = 0;
 	String menu = null, rechercherNom = null, supprimer, edition, modifier, methodeRecherche;
 	static String []nom = new String[100];
 	static String []manuelFr = new String[100];
@@ -17,22 +17,22 @@ public class Frances {
 		
 		Fixos.fixosFrances();
 
-		System.out.println("======================= Bienvenue sur le site WegOne ! ======================="); //introduction
-		System.out.println(); //saut de ligne
-		System.out.println("Ici, vous découvrirez nos projets, apprendrez nos solutions innovantes \net verrez comment nous transformons les idées en technologie."); //description
-		System.out.println(); //saut de ligne
+		System.out.println("======================= Bienvenue sur le site WegOne ! ======================="); 
+		System.out.println(); 
+		System.out.println("Ici, vous découvrirez nos projets, apprendrez nos solutions innovantes \net verrez comment nous transformons les idées en technologie.");
+		System.out.println(); 
 
 		do {
 
-			System.out.println("=============================================================================="); //séparateur
-			System.out.println(); //saut de ligne
+			System.out.println("=============================================================================="); 
+			System.out.println(); 
 
-			System.out.println("=============== Sélectionnez ce que vous voulez faire maintenant =============\n"); //affiche les actions disponibles à l'utilisateur
-			System.out.println("1- Enregistrer une directive; \n2- Rechercher une directive; \n3- Modifier une directive; \n4- Supprimer une directive; \n5- Changer la langue; \n6- Quitter;"); //
+			System.out.println("=============== Sélectionnez ce que vous voulez faire maintenant =============\n"); 
+			System.out.println("1- Enregistrer une directive; \n2- Rechercher une directive; \n3- Modifier une directive; \n4- Supprimer une directive; \n5- Changer la langue; \n6- Quitter;"); 
 			menu = lire.nextLine();
 
-			System.out.println(); //saut de ligne
-			System.out.println("=============================================================================="); //séparateur
+			System.out.println(); 
+			System.out.println("=============================================================================="); 
 
 		//ENREGISTRER-------------------------------------------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ public class Frances {
 		        for(int a = 0; a < nom.length; a++) {
 		            if(nom[a] == null) {
 
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Tapez le nom de la directive : ");
 		                écrit = lire.nextLine();
@@ -250,7 +250,7 @@ public class Frances {
 		        for(int b = 0; b < nom.length; b++) {
 		            if(nom[b] == null) {
 
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Tapez le nom de la directive : ");
 		                écrit = lire.nextLine();
@@ -437,7 +437,7 @@ public class Frances {
 		        for(int c = 0; c < nom.length; c++) {
 		            if(nom[c] == null) {
 
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("==============================================================================");
 		                System.out.println();
 		                System.out.println("Tapez le nom de la directive : ");
 		                écrit = lire.nextLine();
@@ -624,7 +624,7 @@ public class Frances {
 		        for(int d = 0; d < nom.length; d++) {
 		            if(nom[d] == null) {
 
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("==============================================================================");
 		                System.out.println();
 		                System.out.println("Tapez le nom de la directive : ");
 		                écrit = lire.nextLine();
@@ -811,7 +811,7 @@ public class Frances {
 		        for(int e = 0; e < nom.length; e++) {
 		            if(nom[e] == null) {
 
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("=============================================================================="); 
 		                System.out.println();
 		                System.out.println("Tapez le nom de la directive : ");
 		                écrit = lire.nextLine();
@@ -991,7 +991,7 @@ public class Frances {
 		    System.out.println("1- Nom ; \n2- Id ; ");
 		    methodeRecherche = lire.nextLine();
 		    System.out.println();
-		    System.out.println("=============================================================================="); // séparateur
+		    System.out.println("=============================================================================="); 
 
 		    boolean trouvé = false;
 
@@ -1008,11 +1008,11 @@ public class Frances {
 
 		                if(compteur == 1) {
 
-		                    System.out.println("=============================================================================="); // séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("             La directive '" + rechercherNom + "' est déjà enregistrée !");
 		                    System.out.println();
-		                    System.out.println("=============================================================================="); // séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println("\n=========================== Directive Enregistrée ============================");
 
 		                    System.out.println();
@@ -1028,7 +1028,7 @@ public class Frances {
 		                    trouvé = true;
 
 		                } else {
-		                    System.out.println("=============================================================================="); // séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println("\n=========================== Directive Enregistrée ============================");
 
 		                    System.out.println();
@@ -1048,7 +1048,7 @@ public class Frances {
 		        }
 
 		        if(!trouvé) {
-		            System.out.println("=============================================================================="); // séparateur
+		            System.out.println("=============================================================================="); 
 		            System.out.println();
 		            System.out.println("             La directive '" + rechercherNom + "' n'est pas enregistrée !");
 		            System.out.println();
@@ -1064,11 +1064,11 @@ public class Frances {
 		        for(int f = 0; f < nom.length; f++) {
 		            if(rechercherId == (f + 1) && directive[f] != null && !directive[f].isEmpty()) {
 
-		                System.out.println("=============================================================================="); // séparateur
+		                System.out.println("==============================================================================");
 		                System.out.println();
 		                System.out.println("             La directive '" + rechercherId + "' est déjà enregistrée !");
 		                System.out.println();
-		                System.out.println("=============================================================================="); // séparateur
+		                System.out.println("=============================================================================="); 
 		                System.out.println("\n=========================== Directive Enregistrée ============================");
 
 		                System.out.println();
@@ -1086,7 +1086,7 @@ public class Frances {
 		            }
 		        }
 		        if(!trouvé) {
-		            System.out.println("=============================================================================="); // séparateur
+		            System.out.println("=============================================================================="); 
 		            System.out.println();
 		            System.out.println("             La directive '" + rechercherId + "' n'est pas enregistrée !");
 		            System.out.println();
@@ -1102,7 +1102,7 @@ public class Frances {
 		    System.out.println("1- Nom; \n2- ID; ");
 		    String methodeModifier = lire.nextLine();
 		    System.out.println();
-		    System.out.println("=============================================================================="); //séparateur
+		    System.out.println("=============================================================================="); 
 
 		    if (methodeModifier.equals("1") || methodeModifier.equalsIgnoreCase("Nom")) {
 		        System.out.println();
@@ -1116,9 +1116,9 @@ public class Frances {
 		                System.out.println("================ Sélectionnez ce que vous souhaitez modifier =================\n");
 		                System.out.println("1- Nom; \n2- Type; \n3- Directive; \n4- Tout; ");
 		                modifier = lire.nextLine();
-		                String ec = null;
+		                String ec;
 		                System.out.println();
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("=============================================================================="); 
 
 		                if(modifier.equalsIgnoreCase("Nom") || modifier.equalsIgnoreCase("1")) {
 
@@ -1133,7 +1133,7 @@ public class Frances {
 		                        nom[h] = ec;
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    System.out.println("         La directive '" + edition + "' a été modifiée en '" + nom[h] + "' !");
 		                    System.out.println();
@@ -1159,7 +1159,7 @@ public class Frances {
 		                        directive[h] = "Code de conduite et opérations sectorielles";
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    System.out.println("               La directive '" + edition + "' a été modifiée !");
 		                    System.out.println();
@@ -1176,7 +1176,7 @@ public class Frances {
 		                        manuelFr[h] = ec;
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    System.out.println("               La directive '" + edition + "' a été modifiée !");
 		                    System.out.println();
@@ -1197,7 +1197,7 @@ public class Frances {
 		                    System.out.println("1- Manuel d’exploitation;\n2- Procédure de sécurité;\n3- Maintenance et réparations;\n4- Tests et diagnostics;\n5- Code de conduite et opérations sectorielles;");
 		                    ec = lire.nextLine();
 		                    System.out.println();
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("=============================================================================="); 
 
 		                    if (ec.trim().isEmpty()){
 		                        break;
@@ -1224,7 +1224,7 @@ public class Frances {
 		                        manuelFr[h] = ec;
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("==============================================================================");
 		                    System.out.println();
 		                    System.out.println("         La directive '" + edition + "' a été modifiée en '" + nom[h] + "' !");
 		                    System.out.println();
@@ -1247,9 +1247,9 @@ public class Frances {
 		                System.out.println("================ Sélectionnez ce que vous souhaitez modifier =================\n");
 		                System.out.println("1- Nom; \n2- Type; \n3- Directive; \n4- Tout; ");
 		                modifier = lire.nextLine();
-		                String ec = null;
+		                String ec;
 		                System.out.println();
-		                System.out.println("=============================================================================="); //séparateur
+		                System.out.println("==============================================================================");
 
 		                if(modifier.equalsIgnoreCase("Nom") || modifier.equalsIgnoreCase("1")) {
 
@@ -1264,7 +1264,7 @@ public class Frances {
 		                        nom[h] = ec;
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("         La directive '" + edition + "' a été modifiée en '" + nom[h] + "' !");
 		                    System.out.println();
@@ -1290,7 +1290,7 @@ public class Frances {
 		                        directive[h] = "Code de conduite et opérations sectorielles";
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("               La directive '" + edition + "' a été modifiée !");
 		                    System.out.println();
@@ -1307,7 +1307,7 @@ public class Frances {
 		                        manuelFr[h] = ec;
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("               La directive '" + edition + "' a été modifiée !");
 		                    System.out.println();
@@ -1328,7 +1328,7 @@ public class Frances {
 		                    System.out.println("1- Manuel d’exploitation;\n2- Procédure de sécurité;\n3- Maintenance et réparations;\n4- Tests et diagnostics;\n5- Code de conduite et opérations sectorielles;");
 		                    ec = lire.nextLine();
 		                    System.out.println();
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("==============================================================================");
 
 		                    if (ec.trim().isEmpty()){
 		                        break;
@@ -1345,7 +1345,7 @@ public class Frances {
 		                    }
 		                    
 		                    
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("Tapez la nouvelle directive (ID '" + (h + 1) + "') : ");
 		                    ec = lire.nextLine();
@@ -1357,7 +1357,7 @@ public class Frances {
 		                        manuelFr[h] = ec;
 		                    }
 
-		                    System.out.println("=============================================================================="); //séparateur
+		                    System.out.println("=============================================================================="); 
 		                    System.out.println();
 		                    System.out.println("         La directive '" + edition + "' a été modifiée en '" + nom[h] + "' !");
 		                    System.out.println();
@@ -1375,7 +1375,7 @@ public class Frances {
 	    	System.out.println("1- Nom; \n2- ID; ");
 	    	String methodeSupprimer = lire.nextLine();
 	        System.out.println();
-			System.out.println("=============================================================================="); //divider
+			System.out.println("=============================================================================="); 
 
 	        	if (methodeSupprimer.equalsIgnoreCase("nom") || methodeSupprimer.equalsIgnoreCase("1")) {
 	 
@@ -1409,13 +1409,13 @@ public class Frances {
 	                }
 
 	                if (supprime) {
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("==============================================================================");
     					System.out.println();
 	                	System.out.println("      Toutes les directives portant le nom '" + supprimer + "' ont été supprimées.");
                         System.out.println();
 	                	
 	                } else {
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println(" La directive '" + supprimer + "' n’a pas été trouvée, elle n’a donc pas été supprimée.");
                         System.out.println();
@@ -1443,13 +1443,13 @@ public class Frances {
 	                	directive[id - 1] = null;
 	                	id--;
 	                   
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("=============================================================================="); 
     					System.out.println();
 	                	System.out.println("              La directive avec l’ID '" + supprimerId + "' a été supprimée.");
                         System.out.println();
 
 	                } else {
-	                	System.out.println("=============================================================================="); //divider
+	                	System.out.println("==============================================================================");
     					System.out.println();
 	                	System.out.println(" La directive avec l’ID '" + supprimerId + "' n’a pas été trouvée, elle n’a donc pas été supprimée.");
                         System.out.println();
@@ -1467,7 +1467,7 @@ public class Frances {
 	    	
 	    } else if(menu.equalsIgnoreCase("Quitter") || menu.equals("6")) {
 	    	System.out.println("\nMerci d'avoir utilisé WegOne ! \nRevenez bientôt.");
-			System.out.println("\n=============================================================================="); //divisor
+			System.out.println("\n==============================================================================");
 	    }
 		
 		}while(!menu.equals("6") && !menu.equalsIgnoreCase("Quitter"));
